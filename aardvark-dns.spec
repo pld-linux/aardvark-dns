@@ -10,8 +10,9 @@ Source1:	https://github.com/containers/aardvark-dns/releases/download/v%{version
 # Source1-md5:	5aa10aa64f28ffb0a91bfc13d6d25a78
 URL:		https://github.com/containers/aardvark-dns
 BuildRequires:	cargo
-BuildRequires:	rpmbuild(macros) >= 2.004
+BuildRequires:	rpmbuild(macros) >= 2.050
 BuildRequires:	rust
+%{?rust_req}
 ExclusiveArch:	%{rust_arches}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
